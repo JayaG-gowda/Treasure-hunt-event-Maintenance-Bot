@@ -16,15 +16,15 @@ class tuple_(object):
 
 class Config(object):
 
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8591649046:AAHU9-5PRQpDcVvaHtOsVWdkCCjhXwlTkkE") 
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
     
-    API_ID = int(os.environ.get("API_ID", "3393749"))
+    API_ID = int(os.environ.get("API_ID", ""))
 
-    API_HASH = os.environ.get("API_HASH", "a15a5954a1db54952eebd08ea6c68b71")
+    API_HASH = os.environ.get("API_HASH", "")
 
-    OWNER_ID = int(os.environ.get("OWNER_ID", "1061576483")) #me legend580
+    OWNER_ID = int(os.environ.get("OWNER_ID", "")) #me legend580
     
-    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "5393136828 1335490342 2069783555 5163091853 1428060350 721778236 1431838576 5092726834 5049943931 1827457712 5068888843 7601081539 1187985752 5864451133 1061576483").split())
+    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "").split())
 
     AUTH_USERS = list(AUTH_USERS)
     
@@ -34,11 +34,11 @@ class Config(object):
 
     DOWNLOAD_LOCATION = "./DOWNLOADS"
 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001787123592"))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
     
     #DB_CHANNEL = int(os.environ.get("DB_CHANNEL", ""))
 
-    DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://cs:cs@cluster0.ecpmvsv.mongodb.net/?retryWrites=true&w=majority")
+    DATABASE_URL = os.environ.get("DATABASE_URL", "")
 
     DATABASE_NAME = os.environ.get("DATABASE_NAME", "CS")
     
